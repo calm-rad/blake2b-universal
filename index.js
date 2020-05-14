@@ -1,4 +1,4 @@
-const sodium = require('sodium-native')
+const sodium = require('sodium-native-nodejs-mobile')
 
 module.exports = function (out, data, key) {
   if (key) sodium.crypto_generichash(out, data, key)
